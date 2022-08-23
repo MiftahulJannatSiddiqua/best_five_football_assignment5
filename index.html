@@ -11,19 +11,31 @@
     <title>Transfer News 2022</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        .header-img img{
-            width: 70%;
+        .header-img {
+            width: 100%;
             height: 100%;
         }
         .font_family{
             font-family: 'Berkshire Swash', cursive;
+        }      
+        .neymar_img{
+            height: 74%;
+            width: 100%;
+        }
+        .salah_img{
+            width: 100%;
+            height: 77%;
+        } 
+        .virgil_img{
+           width: 100%; 
+           height: 78%;
         }
     </style>
 </head>
 
-<body class="bg-neutral-800	">
+<body class="bg-neutral-900	">
     <header>
-        <div class="flex bg-slate-800">
+        <div class="bg-slate-800 flex">
             <div class="">
                 <img class="header-img" src="images/messi_1.png" alt="">
             </div>
@@ -33,6 +45,89 @@
             </div>
         </div>
     </header>
+    <main>
+        <section class="m-10">
+            <div class="gap-4 grid grid-cols-4">
+                <div class="rounded bg-slate-600 p-3">
+                    <img class="" src="images/messi_2.png" alt=""><br>
+                    <h3 id="messi" class="text-white text-2xl mb-4 font-medium">Leonel Messi</h3>
+                    <button id="btn-messi"
+                        class="text-white text-1xl px-10 py-2 w-11/12 bg-blue-600 rounded mb-4">SELECT</button>
+                </div>
+                <div class="rounded p-3 bg-slate-600">
+                    <img class="" src="images/ronaldo.jpg" alt=""><br>
+                    <h3 id="ronaldo" class="text-white text-2xl mb-4 font-medium">Cristiano Ronaldo</h3>
+                    <button id="btn-ronaldo"
+                        class="text-white text-1xl px-10 py-2 w-11/12 bg-blue-600 rounded mb-4">SELECT</button>
+                </div>
+                <div class="rounded p-3 bg-slate-600">
+                    <img class="" src="images/robert.jpg" alt=""><br>
+                    <h3 id="robert" class="text-white text-2xl mb-4 font-medium">Robert Lewandowski</h3>
+                    <button id="btn-robert"
+                        class="text-white text-1xl px-10 py-2 w-11/12 bg-blue-600 rounded mb-4">SELECT</button>
+                </div>
+
+                <div class="rounded p-3 bg-slate-700 text-white ">
+                    <h3 class="text-3xl text-orange-600 font-medium mb-4 text-center">Selected - V</h3>
+                    <ul id="player-name-list" class="list-decimal mx-5">
+
+                    </ul>
+                </div>
+                <div class="rounded p-3 bg-slate-600">
+                    <img class="" src="images/kylian.jpg" alt=""><br>
+                    <h3 id="kylian" class="text-white text-2xl mb-4 font-medium">Kylian Mbappé</h3>
+                    <button id="btn-kylian"
+                        class="text-white text-1xl px-10 py-2 w-11/12 bg-blue-600 rounded mb-4">SELECT</button>
+                </div>
+                <div class="rounded p-3 bg-slate-600">
+                    <img class="neymar_img" src="images/neymer.jpg" alt=""><br>
+                    <h3 id="neymar" class="text-white text-2xl mb-4 font-medium">Neymar</h3>
+                    <button id="btn-neymar"
+                        class="text-white text-1xl px-10 py-2 w-11/12 bg-blue-600 rounded mb-4">SELECT</button>
+                </div>
+                <div class="rounded p-3 bg-slate-600">
+                    <img class="" src="images/kevin.jpg" alt=""><br>
+                    <h3 id="bruyne" class="text-white text-2xl mb-4 font-medium">Kevin De Bruyne</h3>
+                    <button id="btn-bruyne"
+                        class="text-white text-1xl px-10 py-2 w-11/12 bg-blue-600 rounded mb-4">SELECT</button>
+                </div>
+
+                <div class="rounded p-3 bg-slate-700">
+                    <h3 class="text-3xl text-orange-600 font-medium mb-4 text-center">Budget</h3>
+                    <p class=" text-justify"><span class="text-white">Per Player: </span><input id="player-field"
+                            class="rounded px-4 w-1/2 mb-3" type="text" name=""></p>
+                    <button id="btn-per-player"
+                        class="text-xl text-white bg-blue-600 font-medium px-10 py-2 rounded w-11/12 mb-4">Calculate</button>
+                    <h5 class="text-white mb-4">Player Expenses: $<span id="total-expenses-player">00</span></h5>
+                    <p><span class="text-white">Manager: </span><input id="manager-field"
+                            class="rounded px-4 w-1/2 mb-3 mx-2" type="text" name=""></p>
+                    <p class=""><span class="text-white">Coach: </span><input id="coach-field"
+                            class="rounded px-4 w-1/2 mb-3 mx-7" type="text" name=""></p>
+                    <button id="btn-calculate-total"
+                        class="text-xl text-white bg-blue-600  py-2 rounded w-11/12	 mb-4 ">Calculate Total</button>
+                    <h5 class="text-white mb-4">Total: $<span id="balance-total">00</span></h5>
+                </div>
+                <div class="rounded p-3 bg-slate-600">
+                    <img class="" src="images/haaland.jpg" alt=""><br>
+                    <h3 id="haaland" class="text-white text-2xl mb-4 font-medium">Erling Haaland</h3>
+                    <button id="btn-haaland"
+                        class="text-white text-1xl px-10 py-2 w-11/12 bg-blue-600 rounded mb-4">SELECT</button>
+                </div>
+                <div class="rounded p-3 bg-slate-600">
+                    <img class="salah_img" src="images/salah.jpg" alt=""><br>
+                    <h3 id="salah" class="text-white text-2xl mb-4 font-medium">Mohamed Salah</h3>
+                    <button id="btn-salah"
+                        class="text-white text-1xl px-10 py-2 w-11/12 bg-blue-600 rounded mb-4">SELECT</button>
+                </div>
+                <div class="rounded p-3 bg-slate-600">
+                    <img class="virgil_img" src="images/virgil.jpg" alt=""><br>
+                    <h3 id="virgil" class="text-white text-2xl mb-4 font-medium">Virgil van Dijk</h3>
+                    <button id="btn-virgil"
+                        class="text-white text-1xl px-10 py-2 w-11/12 bg-blue-600 rounded mb-4">SELECT</button>
+                </div>
+            </div>
+        </section>
+    </main>
     <script src="js_file.js"></script>
 </body>
 </html>
